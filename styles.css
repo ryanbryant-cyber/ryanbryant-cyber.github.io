@@ -69,3 +69,44 @@
     min-height: auto;
   }
 }
+/* Mobile navigation and contact improvements */
+@media (max-width: 700px) {
+  .site-header {
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .site-header nav {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: end;
+    gap: 0.45rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .site-header nav a {
+    white-space: nowrap;
+  }
+
+  .contact-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    gap: 0;
+  }
+
+  .contact-actions .button {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #about,
+  #labs,
+  #credentials,
+  #strengths,
+  #contact {
+    scroll-margin-top: 8rem;
+  }
+}
