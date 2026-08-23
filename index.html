@@ -46,6 +46,35 @@
   </button>
 </div>
    <div class="lab-grid">
+      <article class="lab-card" data-category="vulnerability">
+  <div class="image-wrap">
+    <img src="vulnerability-assessment.png"
+         alt="Apache vulnerability assessment evidence">
+    <span>07</span>
+  </div>
+
+  <div class="lab-content">
+    <div class="tags">
+      <span>Nikto</span>
+      <span>Apache</span>
+      <span>Remediation</span>
+    </div>
+
+    <h3>Apache Vulnerability Assessment</h3>
+
+    <p>
+      Assessed an Ubuntu Apache server with Nikto, manually validated the
+      findings, implemented security hardening, and reduced reported items
+      from 10 to 4 while preserving service availability.
+    </p>
+
+    <a href="Ryan_Bryant_Apache_Vulnerability_Assessment_and_Remediation_Case_Study.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read case study <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</article>
 <article class="lab-card" data-category="identity"><div class="image-wrap"><img src="ssh-detection.png" alt="SSH password guessing evidence in Wazuh"><span>01</span></div><div class="lab-content"><div class="tags"><span>Wazuh</span><span>SSH</span><span>Credential Access</span></div><h3>SSH Password Guessing Detection</h3><p>Generated and investigated failed SSH authentication activity in Wazuh, confirming rule 5710 and a Level 5 alert.</p><a href="Ryan_Bryant_SOC_Wazuh_Case_Study.pdf">Read case study <span aria-hidden="true">↗</span></a></div></article>
 <article class="lab-card" data-category="web"><div class="image-wrap"><img src="sql-injection.png" alt="SQL injection evidence in Wazuh"><span>02</span></div><div class="lab-content"><div class="tags"><span>Apache</span><span>SQLi</span><span>MITRE T1190</span></div><h3>SQL Injection Detection</h3><p>Created a controlled SQL injection request, validated Apache telemetry, and analyzed Wazuh rule 31103 mapped to MITRE ATT&amp;CK T1190.</p><a href="Ryan_Bryant_SOC_SQL_Injection_Case_Study.pdf">Read case study <span aria-hidden="true">↗</span></a></div></article>
 <article class="lab-card" data-category="web"><div class="image-wrap"><img src="directory-traversal.png" alt="Directory traversal evidence in Wazuh"><span>03</span></div><div class="lab-content"><div class="tags"><span>Web Logs</span><span>Path Traversal</span><span>Triage</span></div><h3>Directory Traversal Investigation</h3><p>Simulated a path traversal request in an isolated web lab and examined the resulting Level 6 common web attack alert.</p><a href="Ryan_Bryant_SOC_Directory_Traversal_Case_Study.pdf">Read case study <span aria-hidden="true">↗</span></a></div></article>
