@@ -6,9 +6,9 @@
    target="_blank"
    rel="noopener noreferrer">
   View résumé
-</a></div></div><aside class="signal-card" aria-label="Lab overview"><div class="signal-line"><span class="pulse"></span> LAB STATUS: OPERATIONAL</div><dl><div><dt>7</dt><dd>Documented investigations</dd></div><div><dt>10.10.10.0/24</dt><dd>Isolated virtual network</dd></div><div><dt>Wazuh 4.14.7</dt><dd>SIEM / XDR platform</dd></div></dl></aside></section>
+</a></div></div><aside class="signal-card" aria-label="Lab overview"><div class="signal-line"><span class="pulse"></span> LAB STATUS: OPERATIONAL</div><dl><div><dt>8</dt><dd>Documented investigations</dd></div><div><dt>10.10.10.0/24</dt><dd>Isolated virtual network</dd></div><div><dt>Wazuh 4.14.7</dt><dd>SIEM / XDR platform</dd></div></dl></aside></section>
 <section class="about section" id="about"><div><p class="section-label">Profile / 00</p><h2>Analytical thinking, documented in practice.</h2></div><div class="about-copy"><p>My home lab uses VirtualBox, Wazuh, Ubuntu Server, Apache, rsyslog, and UFW to recreate common security events in a safe, isolated environment.</p><p>Each investigation follows a repeatable SOC workflow: establish a baseline, generate controlled activity, validate the source log, locate the SIEM alert, interpret the rule and severity, map relevant MITRE ATT&amp;CK context, and document the result.</p></div></section>
-<section class="section" id="labs"><div class="section-heading"><div><p class="section-label">Selected work / 01—07</p><h2>SOC lab investigations</h2></div><p>Evidence-led case studies from an isolated home lab.</p></div>
+<section class="section" id="labs"><div class="section-heading"><div><p class="section-label">Selected work / 01—08</p><h2>SOC lab investigations</h2></div><p>Evidence-led case studies from an isolated home lab.</p></div>
    <div class="case-study-filters" aria-label="Filter case studies by category">
   <button class="filter-tile active" type="button" data-filter="all">
     <span>All</span>
@@ -78,7 +78,42 @@
 <article class="lab-card" data-category="identity"><div class="image-wrap"><img src="ssh-detection.png" alt="SSH password guessing evidence in Wazuh"><span>01</span></div><div class="lab-content"><div class="tags"><span>Wazuh</span><span>SSH</span><span>Credential Access</span></div><h3>SSH Password Guessing Detection</h3><p>Generated and investigated failed SSH authentication activity in Wazuh, confirming rule 5710 and a Level 5 alert.</p><a href="Ryan_Bryant_SOC_Wazuh_Case_Study.pdf">Read case study <span aria-hidden="true">↗</span></a></div></article>
 <article class="lab-card" data-category="web"><div class="image-wrap"><img src="sql-injection.png" alt="SQL injection evidence in Wazuh"><span>02</span></div><div class="lab-content"><div class="tags"><span>Apache</span><span>SQLi</span><span>MITRE T1190</span></div><h3>SQL Injection Detection</h3><p>Created a controlled SQL injection request, validated Apache telemetry, and analyzed Wazuh rule 31103 mapped to MITRE ATT&amp;CK T1190.</p><a href="Ryan_Bryant_SOC_SQL_Injection_Case_Study.pdf">Read case study <span aria-hidden="true">↗</span></a></div></article>
 <article class="lab-card" data-category="web"><div class="image-wrap"><img src="directory-traversal.png" alt="Directory traversal evidence in Wazuh"><span>03</span></div><div class="lab-content"><div class="tags"><span>Web Logs</span><span>Path Traversal</span><span>Triage</span></div><h3>Directory Traversal Investigation</h3><p>Simulated a path traversal request in an isolated web lab and examined the resulting Level 6 common web attack alert.</p><a href="Ryan_Bryant_SOC_Directory_Traversal_Case_Study.pdf">Read case study <span aria-hidden="true">↗</span></a></div></article>
-<article class="lab-card" data-category="defense"><div class="image-wrap"><img src="firewall-block.png" alt="Blocked network connection evidence in Wazuh"><span>04</span></div><div class="lab-content"><div class="tags"><span>UFW</span><span>Custom Rule</span><span>Network Defense</span></div><h3>Blocked Network Connection</h3><p>Configured UFW controls, verified a denied TCP/8080 connection, and authored and tested a custom Wazuh detection rule.</p><a href="Ryan_Bryant_SOC_Blocked_Network_Connection_Case_Study.pdf">Read case study <span aria-hidden="true">↗</span></a></div></article>
+<article class="lab-card" data-category="defense">
+  <div class="image-wrap">
+    <img src="firewall-block.png"
+         alt="Network isolation and UFW containment evidence in Wazuh">
+    <span>04</span>
+  </div>
+
+  <div class="lab-content">
+    <div class="tags">
+      <span>UFW</span>
+      <span>Wazuh</span>
+      <span>Incident Containment</span>
+    </div>
+
+    <h3>Network Isolation and Containment</h3>
+
+    <p>
+      Detected reconnaissance from 10.10.10.5, isolated the source with a
+      targeted UFW rule, validated authorized access, and preserved
+      SHA-256-verified evidence.
+    </p>
+
+    <a href="Ryan_Bryant_SOC_Network_Isolation_Case_Study.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read case study <span aria-hidden="true">↗</span>
+    </a>
+
+    <br>
+
+    <a href="Ryan_Bryant_Network_Isolation_Stakeholder_Recap.pptx"
+       download>
+      Download stakeholder recap <span aria-hidden="true">↓</span>
+    </a>
+  </div>
+</article>
 <article class="lab-card" data-category="identity"><div class="image-wrap"><img src="sudo-failure.png" alt="Failed privilege escalation evidence in Wazuh"><span>05</span></div><div class="lab-content"><div class="tags"><span>sudo</span><span>Privilege Escalation</span><span>T1548.003</span></div><h3>Failed Privilege Escalation</h3><p>Produced controlled sudo failures and investigated the Level 10 alert mapped to MITRE ATT&amp;CK T1548.003.</p><a href="Ryan_Bryant_SOC_Failed_Privilege_Escalation_Case_Study.pdf">Read case study <span aria-hidden="true">↗</span></a></div></article>
 <article class="lab-card" data-category="reconnaissance traffic">
   <div class="image-wrap">
@@ -121,6 +156,42 @@
     <br>
     <a href="Ryan_Bryant_Web_Attack_Incident_Stakeholder_Recap.pptx">
       View stakeholder briefing <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</article>
+      <article class="lab-card" data-category="identity defense">
+  <div class="image-wrap">
+    <img src="ssh-detection.png"
+         alt="Cowrie SSH honeypot detection evidence in Wazuh">
+    <span>08</span>
+  </div>
+
+  <div class="lab-content">
+    <div class="tags">
+      <span>Cowrie</span>
+      <span>Wazuh</span>
+      <span>Detection Engineering</span>
+    </div>
+
+    <h3>Cowrie Honeypot Detection</h3>
+
+    <p>
+      Deployed a non-root Cowrie SSH honeypot on TCP 2222, ingested structured
+      JSON telemetry into Wazuh, and validated custom rules for failed login,
+      successful login, and command activity.
+    </p>
+
+    <a href="Ryan_Bryant_SOC_Cowrie_Honeypot_Case_Study.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read case study <span aria-hidden="true">↗</span>
+    </a>
+
+    <br>
+
+    <a href="Ryan_Bryant_Cowrie_Honeypot_Stakeholder_Recap.pptx"
+       download>
+      Download stakeholder recap <span aria-hidden="true">↓</span>
     </a>
   </div>
 </article>
