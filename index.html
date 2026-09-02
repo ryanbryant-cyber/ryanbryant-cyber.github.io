@@ -1,14 +1,19 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ryan Bryant | Cybersecurity Portfolio</title><meta name="description" content="SOC investigations, detection engineering, and cybersecurity lab case studies by Ryan Bryant."><link rel="stylesheet" href="styles.css?v=2"></head><body><main>
 <header class="site-header"><a class="brand" href="#top" aria-label="Ryan Bryant home">RB<span>.</span></a><nav aria-label="Primary navigation"><a href="#about">About</a><a href="#labs">Investigations</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a></nav></header>
-<section class="hero" id="top"><div class="hero-copy"><p class="eyebrow">Cybersecurity student · SOC analyst candidate</p><h1>I turn security telemetry into clear, defensible findings.</h1><p class="lede">I’m Ryan Bryant, a cybersecurity bachelor’s student building hands-on experience in alert triage, log analysis, detection engineering, and incident documentation.</p><div class="actions"><a class="button primary" href="#labs">Explore investigations</a><a class="button" href="Ryan_Bryant_SOC_Lab_Scenario_Step_Lists.pdf">View lab step list</a><a class="button secondary"
+<section class="hero" id="top"><div class="hero-copy"><p class="eyebrow">Cybersecurity student · SOC analyst candidate</p><h1>I turn security telemetry into clear, defensible findings.</h1><p class="lede">
+  I’m Ryan Bryant, a cybersecurity bachelor’s student building hands-on
+  experience in security operations, cybersecurity risk assessment,
+  incident analysis, security automation, governance, and technical
+  security documentation.
+</p><div class="actions"><a class="button primary" href="#labs">Explore investigations</a><a class="button" href="Ryan_Bryant_SOC_Lab_Scenario_Step_Lists.pdf">View lab step list</a><a class="button secondary"
    href="Ryan_Bryant_Cybersecurity_Resume.pdf"
    target="_blank"
    rel="noopener noreferrer">
   View résumé
-</a></div></div><aside class="signal-card" aria-label="Lab overview"><div class="signal-line"><span class="pulse"></span> LAB STATUS: OPERATIONAL</div><dl><div><dt>13</dt><dd>Documented investigations</dd></div><div><dt>10.10.10.0/24</dt><dd>Isolated virtual network</dd></div><div><dt>Wazuh 4.14.7</dt><dd>SIEM / XDR platform</dd></div></dl></aside></section>
+</a></div></div><aside class="signal-card" aria-label="Lab overview"><div class="signal-line"><span class="pulse"></span> LAB STATUS: OPERATIONAL</div><dl><div><dt>14</dt><dd>Documented investigations</dd></div><div><dt>10.10.10.0/24</dt><dd>Isolated virtual network</dd></div><div><dt>Wazuh 4.14.7</dt><dd>SIEM / XDR platform</dd></div></dl></aside></section>
 <section class="about section" id="about"><div><p class="section-label">Profile / 00</p><h2>Analytical thinking, documented in practice.</h2></div><div class="about-copy"><p>My home lab uses VirtualBox, Wazuh, Ubuntu Server, Apache, rsyslog, and UFW to recreate common security events in a safe, isolated environment.</p><p>Each investigation follows a repeatable SOC workflow: establish a baseline, generate controlled activity, validate the source log, locate the SIEM alert, interpret the rule and severity, map relevant MITRE ATT&amp;CK context, and document the result.</p></div></section>
-<section class="section" id="labs"><div class="section-heading"><div><p class="section-label">Selected work / 01—13</p><h2>SOC lab investigations</h2></div><p>Evidence-led case studies from an isolated home lab.</p></div>
+<section class="section" id="labs"><div class="section-heading"><div><p class="section-label">Selected work / 01—14</p><h2>Cybersecurity investigations & assessments</h2></div><p>Evidence-led technical investigations, security assessments, and cybersecurity risk projects.</p></div>
    <div class="case-study-filters" aria-label="Filter case studies by category">
   <button class="filter-tile active" type="button" data-filter="all">
     <span>All</span>
@@ -52,6 +57,10 @@
 <button class="filter-tile" type="button" data-filter="automation">
   <span>Security</span>
   <strong>Automation</strong>
+</button>
+      <button class="filter-tile" type="button" data-filter="governance">
+  <span>Governance</span>
+  <strong>&amp; Risk</strong>
 </button>
 </div>
    <div class="lab-grid">
@@ -204,7 +213,7 @@
     </a>
   </div>
 </article>
-      <article class="lab-card" data-category="defense-traffic">
+      <article class="lab-card" data-category="defense traffic">
   <div class="image-wrap">
     <img src="suricata-wazuh-ids.png"
          alt="Suricata and Wazuh IDS custom alert evidence">
@@ -318,6 +327,39 @@
     <img src="wazuh-active-response.png"
          alt="Wazuh Active Response containment and recovery evidence">
     <span>13</span>
+     <article class="lab-card" data-category="governance">
+  <div class="image-wrap">
+    <img src="northstar-risk-assessment.png"
+         alt="Northstar Financial Group cybersecurity risk assessment">
+    <span>14</span>
+  </div>
+
+  <div class="lab-content">
+    <div class="tags">
+      <span>GRC</span>
+      <span>NIST CSF 2.0</span>
+      <span>Cybersecurity Risk Assessment</span>
+      <span>Risk Register Development</span>
+    </div>
+
+    <h3>Cybersecurity Risk & Governance Assessment</h3>
+
+    <p>
+      Conducted a simulated organizational cybersecurity risk assessment for
+      Northstar Financial Group, evaluating asset criticality, identity and
+      access management, backup resilience, third-party risk, incident response,
+      data protection, patch management, and security logging. Developed an
+      11-finding risk register with business impact, ownership, remediation
+      priorities, and preliminary NIST CSF 2.0 alignment.
+    </p>
+
+    <a href="Northstar_Financial_Group_Cybersecurity_Risk_Assessment.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read assessment <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</article>
   </div>
 
   <div class="lab-content">
