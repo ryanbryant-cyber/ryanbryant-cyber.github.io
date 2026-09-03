@@ -1,0 +1,14 @@
+﻿System ID,System,Emily Carter - Financial Analyst,Michael Torres - Finance Manager,Samantha Reed - Accounts Payable Specialist,Jennifer Walsh - HR Manager,Daniel Kim - Standard Account,Daniel Kim - Privileged Administrator,Alex Morgan - Cybersecurity Analyst,Robert Hayes - CEO,Amanda Brooks - Compliance & Risk Manager,svc-backup-nfg - Backup Service Account,Emily Carter - HR Compensation Analyst
+IAM-01,AD / Entra ID,U,U,U,U,U,PA,SR,U,U+SR,AUTH,U
+IAM-02,Microsoft 365,RW,RW,RW,RW,RW,ADM,SR,RW,RW,N,RW
+IAM-03,Customer CRM,R,RW+A,N,N,N,N,N,R+A,N,N,N
+IAM-04,Finance File Repository,RW,RW+A,RW,N,N,N,N,R,SR,SR,N
+IAM-05,Payroll SaaS,N,SR,N,R+A,N,N,N,N,N,N,SR
+IAM-06,HRIS,N,N,N,RW+A,N,N,N,N,SR,N,SRW
+IAM-07,VPN,U,U,U,U,U,ADM,R,U,U+R,N,U
+IAM-08,IT Admin Tools,N,N,N,N,N,PA,ADM,N,SR,N,N
+IAM-09,Backup Admin,N,N,N,N,N,ADM,R,N,R,SRW,N
+IAM-10,Security Platform,N,N,N,N,R,R,ADM,N,R,N,N
+IAM-11,Vendor Portal,N,N,RW,N,N,N,N,R+A,R,N,N
+IAM-12,Executive Financial Repository,N,SR,N,N,N,N,N,R,SR,SR,N
+IAM-13,Accounts Payable System,N,A,RW,N,N,N,N,A,SR,N,N
