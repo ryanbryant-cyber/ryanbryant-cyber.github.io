@@ -1,8 +1,22 @@
 # Ryan Bryant | Cybersecurity Portfolio
 
-Welcome to my cybersecurity portfolio. This repository documents hands-on projects and case studies developed to strengthen my skills across security operations, governance and risk, vulnerability assessment, endpoint investigation, security automation, incident response, and technical reporting.
+Welcome to my cybersecurity portfolio. This repository documents hands-on technical investigations, security engineering projects, and business-focused cybersecurity assessments developed as I pursue a Bachelor of Science in Cybersecurity.
 
-My goal is to demonstrate not only technical cybersecurity skills, but also the ability to analyze findings, assess business risk, recommend remediation, and communicate security information clearly to both technical and non-technical stakeholders.
+My work spans security operations, SIEM analysis, network and endpoint investigation, security automation, governance and risk, identity and access management, business continuity and disaster recovery, third-party risk management, and secure enterprise architecture.
+
+The portfolio is designed to demonstrate more than individual cybersecurity tools. Projects focus on evidence-based analysis, least privilege, risk prioritization, resilient design, remediation planning, and communicating technical security findings to both technical teams and organizational stakeholders.
+
+## Northstar Financial Group Security Program
+
+A major portion of this portfolio follows a fictional 75-person financial-services organization through a connected series of cybersecurity assessments and design projects:
+
+- **Cybersecurity Risk & Governance Assessment** — asset criticality, risk register development, and NIST CSF 2.0 alignment
+- **Identity & Access Management / RBAC Assessment** — least privilege, separation of duties, privileged access, and Joiner-Mover-Leaver controls
+- **Business Continuity & Disaster Recovery** — BIA, RTO/RPO analysis, recovery prioritization, resilient backup strategy, and tabletop exercises
+- **Third-Party / Vendor Risk Assessment** — vendor due diligence, weighted risk scoring, contract negotiation, supply-chain risk, and residual-risk analysis
+- **Secure Enterprise Security Architecture** — network segmentation, Zero Trust principles, trust boundaries, secure remote/vendor access, monitoring, and isolated recovery infrastructure
+
+These projects complement the technical SOC and security-engineering labs throughout the portfolio and demonstrate how security operations, governance, identity, resilience, vendor management, and architecture work together as part of a broader cybersecurity program.
 
 ## Areas of Focus
 
