@@ -1,223 +1,859 @@
-RB.
-AboutInvestigationsCredentialsContact
-Cybersecurity student · SOC analyst candidate
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ryan Bryant | Cybersecurity Portfolio</title><meta name="description" content="SOC investigations, detection engineering, and cybersecurity lab case studies by Ryan Bryant."><link rel="stylesheet" href="styles.css?v=2"></head><body><main>
+<header class="site-header"><a class="brand" href="#top" aria-label="Ryan Bryant home">RB<span>.</span></a><nav aria-label="Primary navigation"><a href="#about">About</a><a href="#labs">Investigations</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a></nav></header>
+<section class="hero" id="top"><div class="hero-copy"><p class="eyebrow">Cybersecurity student · SOC analyst candidate</p><h1>I turn security telemetry into clear, defensible findings.</h1><p class="lede">
+  I’m Ryan Bryant, a cybersecurity bachelor’s student building hands-on
+  experience in security operations, cybersecurity risk assessment,
+  incident analysis, security automation, governance, and technical
+  security documentation.
+</p><div class="actions"><a class="button primary" href="#labs">Explore investigations</a><a class="button" href="Ryan_Bryant_SOC_Lab_Scenario_Step_Lists.pdf">View lab step list</a><a class="button secondary"
+   href="Ryan_Bryant_Cybersecurity_Analyst_Resume_2026.pdf"
+   target="_blank"
+   rel="noopener noreferrer">
+  View résumé
+</a></div></div><aside class="signal-card" aria-label="Lab overview"><div class="signal-line"><span class="pulse"></span> LAB STATUS: OPERATIONAL</div><dl><div><dt>20</dt><dd>Documented case studies</dd></div><div><dt>10.10.10.0/24</dt><dd>Isolated virtual network</dd></div><div><dt>Wazuh 4.14.7</dt><dd>SIEM / XDR platform</dd></div></dl></aside></section>
+<section class="about section" id="about"><div><p class="section-label">Profile / 00</p><h2>Analytical thinking, documented in practice.</h2></div><div class="about-copy"><p>My home lab uses VirtualBox, Wazuh, Windows PowerShell, Ubuntu Server, Apache, rsyslog, and UFW to recreate common security events in a controlled educational environment.</p><p>Technical investigations use a repeatable workflow: establish a baseline, generate controlled activity, collect and correlate evidence, assess scope, map supported MITRE ATT&amp;CK context, and document findings. Response exercises also validate containment actions, backup integrity, and recovery. Security assessments document assumptions, risks, and recommended controls.</p></div></section>
+<section class="section" id="labs"><div class="section-heading"><div><p class="section-label">Selected work / 01—20</p><h2>Cybersecurity investigations & assessments</h2></div><p>Evidence-led technical investigations, security assessments, and cybersecurity risk projects.</p></div>
+   <div class="case-study-filters" aria-label="Filter case studies by category">
+  <button class="filter-tile active" type="button" data-filter="all">
+    <span>All</span>
+    <strong>Case Studies</strong>
+  </button>
 
-I turn security telemetry into clear, defensible findings.
-I’m Ryan Bryant, a cybersecurity bachelor’s student building hands-on experience in security operations, cybersecurity risk assessment, incident analysis, security automation, governance, and technical security documentation.
+  <button class="filter-tile" type="button" data-filter="reconnaissance">
+    <span>Network</span>
+    <strong>Reconnaissance</strong>
+  </button>
 
-Explore investigationsView lab step list View résumé
-LAB STATUS: OPERATIONAL
-20
-Documented case studies
-10.10.10.0/24
-Isolated virtual network
-Wazuh 4.14.7
-SIEM / XDR platform
-Profile / 00
+  <button class="filter-tile" type="button" data-filter="web">
+    <span>Web Application</span>
+    <strong>Security</strong>
+  </button>
 
-Analytical thinking, documented in practice.
-My home lab uses VirtualBox, Wazuh, Windows PowerShell, Ubuntu Server, Apache, rsyslog, and UFW to recreate common security events in a controlled educational environment.
+  <button class="filter-tile" type="button" data-filter="identity">
+    <span>Identity</span>
+    <strong>&amp; Privilege</strong>
+  </button>
 
-Technical investigations use a repeatable workflow: establish a baseline, generate controlled activity, collect and correlate evidence, assess scope, map supported MITRE ATT&CK context, and document findings. Response exercises also validate containment actions, backup integrity, and recovery. Security assessments document assumptions, risks, and recommended controls.
+  <button class="filter-tile" type="button" data-filter="defense">
+    <span>Network</span>
+    <strong>Defense</strong>
+  </button>
 
-Selected work / 01—20
+  <button class="filter-tile" type="button" data-filter="traffic">
+    <span>Traffic</span>
+    <strong>Analysis</strong>
+  </button>
 
-Cybersecurity investigations & assessments
-Evidence-led technical investigations, security assessments, and cybersecurity risk projects.
+  <button class="filter-tile" type="button" data-filter="vulnerability">
+    <span>Vulnerability</span>
+    <strong>Assessment</strong>
+  </button>
+      <button class="filter-tile" type="button" data-filter="endpoint">
+  <span>Endpoint</span>
+  <strong>Hunting</strong>
+</button>
 
-All Case Studies Network Reconnaissance Web Application Security Identity & Privilege Network Defense Traffic Analysis Vulnerability Assessment Endpoint Hunting Security Automation Governance & Risk Business Continuity Third-Party Risk Security Architecture Cloud Security
-Four restored Finance files with matching SHA-256 hashes 20
-PowerShell Incident Response SHA-256
-Ransomware Incident Response & Recovery
-Investigated a controlled ransomware-like simulation affecting four synthetic Finance files. Correlated live file activity with PowerShell evidence, validated backups, and confirmed all four restored files matched their original SHA-256 hashes. Used Base64 simulation; no real encryption was performed.
+<button class="filter-tile" type="button" data-filter="automation">
+  <span>Security</span>
+  <strong>Automation</strong>
+</button>
+      <button class="filter-tile" type="button" data-filter="governance">
+  <span>Governance</span>
+  <strong>&amp; Risk</strong>
+</button>
+     <button class="filter-tile" type="button" data-filter="continuity">
+  <span>Business</span>
+  <strong>Continuity</strong>
+</button>
+     <button class="filter-tile" type="button" data-filter="vendor">
+  <span>Third-Party</span>
+  <strong>Risk</strong>
+</button>
+     <button class="filter-tile" type="button" data-filter="architecture">
+  <span>Security</span>
+  <strong>Architecture</strong>
+</button>
+     <button class="filter-tile" type="button" data-filter="cloud">
+  <span>Cloud</span>
+  <strong>Security</strong>
+</button>
+</div>
+   <div class="lab-grid">
+     <article class="lab-card" data-category="endpoint defense continuity">
+  <div class="image-wrap">
+    <img src="northstar-ransomware-recovery.png"
+         alt="Four restored Finance files with matching SHA-256 hashes">
+    <span>20</span>
+  </div>
 
-Read case study ↗
-Apache vulnerability assessment evidence 10
-Nikto Apache Remediation
-Apache Vulnerability Assessment
-Assessed an Ubuntu Apache server with Nikto, manually validated the findings, implemented security hardening, and reduced reported items from 10 to 4 while preserving service availability.
+  <div class="lab-content">
+    <div class="tags">
+      <span>PowerShell</span>
+      <span>Incident Response</span>
+      <span>SHA-256</span>
+    </div>
 
-Read case study ↗
-SSH password guessing evidence in Wazuh01
-WazuhSSHCredential Access
-SSH Password Guessing Detection
-Generated and investigated failed SSH authentication activity in Wazuh, confirming rule 5710 and a Level 5 alert.
+    <h3>Ransomware Incident Response &amp; Recovery</h3>
 
-Read case study ↗
-SQL injection evidence in Wazuh02
-ApacheSQLiMITRE T1190
-SQL Injection Detection
-Created a controlled SQL injection request, validated Apache telemetry, and analyzed Wazuh rule 31103 mapped to MITRE ATT&CK T1190.
+    <p>
+      Investigated a controlled ransomware-like simulation affecting four
+      synthetic Finance files. Correlated live file activity with PowerShell
+      evidence, validated backups, and confirmed all four restored files
+      matched their original SHA-256 hashes. Used Base64 simulation;
+      no real encryption was performed.
+    </p>
 
-Read case study ↗
-Directory traversal evidence in Wazuh03
-Web LogsPath TraversalTriage
-Directory Traversal Investigation
-Simulated a path traversal request in an isolated web lab and examined the resulting Level 6 common web attack alert.
+    <a href="Northstar_Ridge_Ransomware_Incident_Response_Recovery_Case_Study.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read case study <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</article>
+      <article class="lab-card" data-category="vulnerability">
+  <div class="image-wrap">
+    <img src="vulnerability-assessment.png"
+         alt="Apache vulnerability assessment evidence">
+    <span>10</span>
+  </div>
 
-Read case study ↗
-Network isolation and UFW containment evidence in Wazuh 04
-UFW Wazuh Incident Containment
-Network Isolation and Containment
-Detected reconnaissance from 10.10.10.5, isolated the source with a targeted UFW rule, validated authorized access, and preserved SHA-256-verified evidence.
+  <div class="lab-content">
+    <div class="tags">
+      <span>Nikto</span>
+      <span>Apache</span>
+      <span>Remediation</span>
+    </div>
 
-Read case study ↗
-Download stakeholder recap ↓
-Failed privilege escalation evidence in Wazuh05
-sudoPrivilege EscalationT1548.003
-Failed Privilege Escalation
-Produced controlled sudo failures and investigated the Level 10 alert mapped to MITRE ATT&CK T1548.003.
+    <h3>Apache Vulnerability Assessment</h3>
 
-Read case study ↗
-Wireshark and Wazuh reconnaissance investigation evidence 06
-Wireshark Wazuh Network Forensics
-Network Reconnaissance Investigation
-Captured and analyzed TCP reconnaissance against a Linux web server, identified SSH and HTTP service enumeration, and correlated packet-level evidence with Wazuh UFW alerts.
+    <p>
+      Assessed an Ubuntu Apache server with Nikto, manually validated the
+      findings, implemented security hardening, and reduced reported items
+      from 10 to 4 while preserving service availability.
+    </p>
 
-Read case study ↗
-Wireshark incident response investigation evidence 07
-Wireshark Incident Response Log Correlation
-Web Attack Incident Investigation
-Investigated simulated reconnaissance, web-attack requests, and failed SSH authentication by correlating Wireshark packet captures with Apache and Linux authentication logs.
+    <a href="Ryan_Bryant_Apache_Vulnerability_Assessment_and_Remediation_Case_Study.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read case study <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</article>
+<article class="lab-card" data-category="identity"><div class="image-wrap"><img src="ssh-detection.png" alt="SSH password guessing evidence in Wazuh"><span>01</span></div><div class="lab-content"><div class="tags"><span>Wazuh</span><span>SSH</span><span>Credential Access</span></div><h3>SSH Password Guessing Detection</h3><p>Generated and investigated failed SSH authentication activity in Wazuh, confirming rule 5710 and a Level 5 alert.</p><a href="Ryan_Bryant_SOC_Wazuh_Case_Study.pdf">Read case study <span aria-hidden="true">↗</span></a></div></article>
+<article class="lab-card" data-category="web"><div class="image-wrap"><img src="sql-injection.png" alt="SQL injection evidence in Wazuh"><span>02</span></div><div class="lab-content"><div class="tags"><span>Apache</span><span>SQLi</span><span>MITRE T1190</span></div><h3>SQL Injection Detection</h3><p>Created a controlled SQL injection request, validated Apache telemetry, and analyzed Wazuh rule 31103 mapped to MITRE ATT&amp;CK T1190.</p><a href="Ryan_Bryant_SOC_SQL_Injection_Case_Study.pdf">Read case study <span aria-hidden="true">↗</span></a></div></article>
+<article class="lab-card" data-category="web"><div class="image-wrap"><img src="directory-traversal.png" alt="Directory traversal evidence in Wazuh"><span>03</span></div><div class="lab-content"><div class="tags"><span>Web Logs</span><span>Path Traversal</span><span>Triage</span></div><h3>Directory Traversal Investigation</h3><p>Simulated a path traversal request in an isolated web lab and examined the resulting Level 6 common web attack alert.</p><a href="Ryan_Bryant_SOC_Directory_Traversal_Case_Study.pdf">Read case study <span aria-hidden="true">↗</span></a></div></article>
+<article class="lab-card" data-category="defense">
+  <div class="image-wrap">
+    <img src="firewall-block.png"
+         alt="Network isolation and UFW containment evidence in Wazuh">
+    <span>04</span>
+  </div>
 
-Read case study ↗
-View stakeholder briefing ↗
-Cowrie SSH honeypot detection evidence in Wazuh 08
-Cowrie Wazuh Detection Engineering
-Cowrie Honeypot Detection
-Deployed a non-root Cowrie SSH honeypot on TCP 2222, ingested structured JSON telemetry into Wazuh, and validated custom rules for failed login, successful login, and command activity.
+  <div class="lab-content">
+    <div class="tags">
+      <span>UFW</span>
+      <span>Wazuh</span>
+      <span>Incident Containment</span>
+    </div>
 
-Read case study ↗
-Download stakeholder recap ↓
-Suricata and Wazuh IDS custom alert evidence 09
-Suricata Wazuh Detection Engineering
-Suricata Network IDS and Wazuh Integration
-Deployed Suricata as a network intrusion detection sensor, integrated its JSON telemetry with Wazuh, validated ICMP detection, and engineered a custom rule for suspicious HTTP requests.
+    <h3>Network Isolation and Containment</h3>
 
-Read case study ↗
-Download stakeholder recap ↓
-osquery endpoint hunting investigation evidence 11
-osquery Endpoint Hunting SQL
-osquery Endpoint Hunting
-Attributed a controlled listener to its process, executable, command line, PID, port, and user; independently validated the service, removed it, and confirmed a clean final state.
+    <p>
+      Detected reconnaissance from 10.10.10.5, isolated the source with a
+      targeted UFW rule, validated authorized access, and preserved
+      SHA-256-verified evidence.
+    </p>
 
-Read case study ↗
-Download stakeholder report ↓
-Python alert triage and correlation evidence 12
-Python Alert Triage Correlation
-Python Alert Triage Automation
-Normalized 42 Suricata and Wazuh records into 21 unique correlated events, preserved source provenance, and completed processing with zero parser errors.
+    <a href="Ryan_Bryant_SOC_Network_Isolation_Case_Study.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read case study <span aria-hidden="true">↗</span>
+    </a>
 
-Read case study ↗
-Download stakeholder report ↓
-Wazuh Active Response containment and recovery evidence 13
-Wazuh Active Response Automation
-Wazuh Active Response
-Converted custom rule 100120 into a guarded source-specific firewall block, verified a 120-second containment window, and confirmed automatic recovery with no residual rule.
+    <br>
 
-Read case study ↗
-Download stakeholder report ↓
-Northstar Financial Group cybersecurity risk assessment 14
-GRC NIST CSF 2.0 Cybersecurity Risk Assessment Risk Register Development
-Cybersecurity Risk & Governance Assessment
-Conducted a simulated organizational cybersecurity risk assessment for Northstar Financial Group, evaluating asset criticality, identity and access management, backup resilience, third-party risk, incident response, data protection, patch management, and security logging. Developed an 11-finding risk register with business impact, ownership, remediation priorities, and preliminary NIST CSF 2.0 alignment.
+    <a href="Ryan_Bryant_Network_Isolation_Stakeholder_Recap.pptx"
+       download>
+      Download stakeholder recap <span aria-hidden="true">↓</span>
+    </a>
+  </div>
+</article>
+<article class="lab-card" data-category="identity"><div class="image-wrap"><img src="sudo-failure.png" alt="Failed privilege escalation evidence in Wazuh"><span>05</span></div><div class="lab-content"><div class="tags"><span>sudo</span><span>Privilege Escalation</span><span>T1548.003</span></div><h3>Failed Privilege Escalation</h3><p>Produced controlled sudo failures and investigated the Level 10 alert mapped to MITRE ATT&amp;CK T1548.003.</p><a href="Ryan_Bryant_SOC_Failed_Privilege_Escalation_Case_Study.pdf">Read case study <span aria-hidden="true">↗</span></a></div></article>
+<article class="lab-card" data-category="reconnaissance traffic">
+  <div class="image-wrap">
+    <img src="ChatGPT Image Aug 21, 2026, 05_01_37 PM.png" alt="Wireshark and Wazuh reconnaissance investigation evidence">
+    <span>06</span>
+  </div>
+  <div class="lab-content">
+    <div class="tags">
+      <span>Wireshark</span>
+      <span>Wazuh</span>
+      <span>Network Forensics</span>
+    </div>
+    <h3>Network Reconnaissance Investigation</h3>
+    <p>Captured and analyzed TCP reconnaissance against a Linux web server, identified SSH and HTTP service enumeration, and correlated packet-level evidence with Wazuh UFW alerts.</p>
+    <a href="Ryan_Bryant_SOC_Wireshark_Wazuh_Reconnaissance_Case_Study.pdf">
+      Read case study <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</article>
+<article class="lab-card" data-category="traffic web identity">
+  <div class="image-wrap">
+    <img src="ChatGPT Image Aug 24, 2026, 04_33_03 PM.png" alt="Wireshark incident response investigation evidence">
+    <span>07</span>
+  </div>
 
-Read assessment ↗
-Northstar Financial Group identity and access management RBAC assessment 15
-IAM RBAC Least Privilege Access Governance
-Identity & Access Management / RBAC Assessment
-Designed a role-based access control model for Northstar Financial Group covering human and service identities, least privilege, separation of duties, privileged access, MFA, Joiner-Mover-Leaver processes, and access reviews. Developed a consolidated RBAC matrix across 13 systems and 11 role and identity profiles.
+  <div class="lab-content">
+    <div class="tags">
+      <span>Wireshark</span>
+      <span>Incident Response</span>
+      <span>Log Correlation</span>
+    </div>
 
-Read assessment ↗
-Download RBAC matrix ↓
-Northstar Financial Group business continuity and disaster recovery assessment 16
-BC/DR Business Impact Analysis RTO / RPO Tabletop Exercise
-Business Continuity & Disaster Recovery
-Developed a comprehensive business continuity and disaster recovery strategy for Northstar Financial Group. Conducted a business impact analysis across 10 critical services, established RTO and RPO targets, prioritized recovery dependencies, identified single points of failure, designed resilient backup and remote-access strategies, and completed a multi-stage tabletop disaster exercise with an after-action review and remediation roadmap.
+    <h3>Web Attack Incident Investigation</h3>
 
-Read BC/DR plan ↗
-Read tabletop report ↗
-Northstar Financial Group third-party vendor cybersecurity risk assessment 17
-Third-Party Risk Vendor Assessment Risk Scoring Contract Review
-Third-Party / Vendor Cybersecurity Risk Assessment
-Conducted a simulated third-party cybersecurity risk assessment of Northstar Financial Group's critical managed IT provider. Evaluated privileged access, data protection, incident response, business continuity, subprocessors, supply-chain risk, and vendor exit requirements across a 22-question assessment. Developed weighted current-state and residual-risk scores, negotiated security contract requirements, identified renewal blockers, and issued a Conditional Go recommendation.
+    <p>Investigated simulated reconnaissance, web-attack requests, and failed SSH authentication by correlating Wireshark packet captures with Apache and Linux authentication logs.</p>
 
-Read vendor assessment ↗
-Read renewal decision memo ↗
-Northstar Financial Group secure enterprise security architecture 18
-Security Architecture Zero Trust Network Segmentation Least Privilege
-Secure Enterprise Security Architecture
-Designed a target-state enterprise security architecture for Northstar Financial Group using segmented security zones, default-deny trust boundaries, Zero Trust principles, controlled remote and vendor access, privileged administration, centralized security monitoring, protected data flows, and isolated backup and recovery infrastructure.
+    <a href="Ryan_Bryant_Simulated_Web_Attack_Incident_Response_Case_Study.pdf">
+      Read case study <span aria-hidden="true">↗</span>
+    </a>
+    <br>
+    <a href="Ryan_Bryant_Web_Attack_Incident_Stakeholder_Recap.pptx">
+      View stakeholder briefing <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</article>
+      <article class="lab-card" data-category="identity defense">
+  <div class="image-wrap">
+    <img src="ssh-detection.png"
+         alt="Cowrie SSH honeypot detection evidence in Wazuh">
+    <span>08</span>
+  </div>
 
-Read architecture assessment ↗
-Read executive design brief ↗
-Azure Finance VM security assessment 19
-Azure Cloud Security RBAC PIM Sentinel
-Azure Finance VM Security Assessment
-Cloud security assessment and secure redesign for a fictional critical Finance workload, covering privileged access, network segmentation, lateral-movement controls, centralized monitoring, and recovery readiness.
+  <div class="lab-content">
+    <div class="tags">
+      <span>Cowrie</span>
+      <span>Wazuh</span>
+      <span>Detection Engineering</span>
+    </div>
 
-Case Study ↗
-Capabilities / 06
+    <h3>Cowrie Honeypot Detection</h3>
 
-Tools and methods
-Wazuh Linux VirtualBox Apache rsyslog UFW Log analysis Alert triage MITRE ATT&CK Detection validation Suricata osquery Python JSONL Normalization Active Response iptables Security Automation Evidence Integrity Identity & Access Management RBAC Least Privilege Privileged Access Management Separation of Duties Joiner-Mover-Leaver Business Continuity Disaster Recovery Business Impact Analysis RTO / RPO Analysis Recovery Planning Tabletop Exercises Third-Party Risk Management Vendor Risk Assessment Supply Chain Risk Contract Security Review Residual Risk Analysis Vendor Due Diligence Security Architecture Zero Trust Architecture Network Segmentation Trust Boundaries Secure Remote Access Privileged Access Design Data Flow Security Defense in Depth Microsoft Azure Cloud Security Microsoft Entra ID Conditional Access Azure RBAC Privileged Identity Management (PIM) Azure Virtual Networks Network Security Groups (NSGs) Azure Firewall Azure Bastion Just-in-Time Access Microsoft Defender for Cloud Azure Monitor Log Analytics Microsoft Sentinel Azure Backup Cloud Resilience Sigma YARA Detection Engineering Threat Intelligence IOC Analysis DFIR Windows Event Analysis PCAP Analysis Network Forensics DevSecOps Application Security Secrets Detection Secure Configuration Review Behavioral Correlation PowerShell File Integrity Monitoring SHA-256 Validation Backup and Recovery Validation
-Credentials / 07
+    <p>
+      Deployed a non-root Cowrie SSH honeypot on TCP 2222, ingested structured
+      JSON telemetry into Wazuh, and validated custom rules for failed login,
+      successful login, and command activity.
+    </p>
 
-Credentials and recognition
-Academic achievement and verified professional development.
+    <a href="Ryan_Bryant_SOC_Cowrie_Honeypot_Case_Study.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read case study <span aria-hidden="true">↗</span>
+    </a>
 
-Education
+    <br>
 
-Bachelor of Science in Cybersecurity
-University of Phoenix · Expected May 2028
+    <a href="Ryan_Bryant_Cowrie_Honeypot_Stakeholder_Recap.pptx"
+       download>
+      Download stakeholder recap <span aria-hidden="true">↓</span>
+    </a>
+  </div>
+</article>
+      <article class="lab-card" data-category="defense traffic">
+  <div class="image-wrap">
+    <img src="suricata-wazuh-ids.png"
+         alt="Suricata and Wazuh IDS custom alert evidence">
+    <span>09</span>
+  </div>
 
-Academic honors
+  <div class="lab-content">
+    <div class="tags">
+      <span>Suricata</span>
+      <span>Wazuh</span>
+      <span>Detection Engineering</span>
+    </div>
 
-President’s List and Dean’s List
-President’s List once · Dean’s List twice
+    <h3>Suricata Network IDS and Wazuh Integration</h3>
 
-Honor societies
+    <p>
+      Deployed Suricata as a network intrusion detection sensor, integrated
+      its JSON telemetry with Wazuh, validated ICMP detection, and engineered
+      a custom rule for suspicious HTTP requests.
+    </p>
 
-Academic Memberships
-NSLS · Epsilon Pi Tau, Delta Sigma Chapter
+    <a href="Ryan_Bryant_SOC_Suricata_Wazuh_IDS_Case_Study.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read case study <span aria-hidden="true">↗</span>
+    </a>
 
-Professional development
+    <br>
 
-Verified Digital Credentials
-Network defense, endpoint protection, threat response, and data analytics
+    <a href="Ryan_Bryant_Suricata_Wazuh_IDS_Stakeholder_Recap.pptx"
+       download>
+      Download stakeholder recap <span aria-hidden="true">↓</span>
+    </a>
+  </div>
+</article>
+     <article class="lab-card" data-category="endpoint identity defense">
+  <div class="image-wrap">
+    <img src="osquery-endpoint-hunting.png"
+         alt="osquery endpoint hunting investigation evidence">
+    <span>11</span>
+  </div>
 
-View Credly profile ↗
-Analyst value / 08
+  <div class="lab-content">
+    <div class="tags">
+      <span>osquery</span>
+      <span>Endpoint Hunting</span>
+      <span>SQL</span>
+    </div>
 
-What I bring to a SOC team
-Practical capabilities demonstrated through documented home-lab investigations.
+    <h3>osquery Endpoint Hunting</h3>
 
-Alert investigation
+    <p>
+      Attributed a controlled listener to its process, executable, command line,
+      PID, port, and user; independently validated the service, removed it, and
+      confirmed a clean final state.
+    </p>
 
-Evidence-Based Triage
-Analyze security alerts, validate source telemetry, and distinguish meaningful activity from routine events.
+    <a href="Ryan_Bryant_SOC_osquery_Endpoint_Hunting_Case_Study.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read case study <span aria-hidden="true">↗</span>
+    </a>
 
-Technical analysis
+    <br>
 
-Log Analysis
-Examine Linux, SSH, Apache, sudo, rsyslog, and firewall logs to identify suspicious behavior.
+    <a href="Ryan_Bryant_osquery_Endpoint_Hunting_Stakeholder_Report.pptx"
+       download>
+      Download stakeholder report <span aria-hidden="true">↓</span>
+    </a>
+  </div>
+</article>
 
-Detection engineering
+<article class="lab-card" data-category="automation defense">
+  <div class="image-wrap">
+    <img src="python-alert-triage.png"
+         alt="Python alert triage and correlation evidence">
+    <span>12</span>
+  </div>
 
-Detection Validation
-Generate controlled security events, test Wazuh rules, interpret severity, and map findings to MITRE ATT&CK.
+  <div class="lab-content">
+    <div class="tags">
+      <span>Python</span>
+      <span>Alert Triage</span>
+      <span>Correlation</span>
+    </div>
 
-Communication
+    <h3>Python Alert Triage Automation</h3>
 
-Incident Documentation
-Produce organized case studies that explain evidence, analytical conclusions, troubleshooting, and remediation recommendations.
+    <p>
+      Normalized 42 Suricata and Wazuh records into 21 unique correlated events,
+      preserved source provenance, and completed processing with zero parser errors.
+    </p>
 
-Methodology note / 09
+    <a href="Ryan_Bryant_SOC_Python_Alert_Triage_Case_Study.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read case study <span aria-hidden="true">↗</span>
+    </a>
 
-These scenarios were performed by Ryan Bryant in an isolated educational home lab. OpenAI’s ChatGPT (“Sarah”) assisted with troubleshooting, explanations, and document organization. Commands were executed and results were validated by the author. Official vendor documentation is cited within the case-study reports.
+    <br>
 
-Open to SOC analyst and cybersecurity analyst opportunities
+    <a href="Ryan_Bryant_Python_Alert_Triage_Stakeholder_Report.pptx"
+       download>
+      Download stakeholder report <span aria-hidden="true">↓</span>
+    </a>
+  </div>
+</article>
 
-Let’s connect.
-Email me LinkedIn ↗ GitHub ↗ Security Operations Toolkit ↗ Résumé ↗
-© 2026 Ryan Bryant · Educational cybersecurity portfolio
+<article class="lab-card" data-category="defense automation">
+  <div class="image-wrap">
+    <img src="wazuh-active-response.png"
+         alt="Wazuh Active Response containment and recovery evidence">
+    <span>13</span></div>
+  
+
+  <div class="lab-content">
+    <div class="tags">
+      <span>Wazuh</span>
+      <span>Active Response</span>
+      <span>Automation</span>
+    </div>
+
+    <h3>Wazuh Active Response</h3>
+
+    <p>
+      Converted custom rule 100120 into a guarded source-specific firewall block,
+      verified a 120-second containment window, and confirmed automatic recovery
+      with no residual rule.
+    </p>
+
+    <a href="Ryan_Bryant_SOC_Wazuh_Active_Response_Case_Study.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read case study <span aria-hidden="true">↗</span>
+    </a>
+
+    <br>
+
+    <a href="Ryan_Bryant_Wazuh_Active_Response_Stakeholder_Report.pptx"
+       download>
+      Download stakeholder report <span aria-hidden="true">↓</span>
+    </a>
+  </div>
+</article> 
+        <article class="lab-card" data-category="governance">
+  <div class="image-wrap">
+    <img src="northstar-risk-assessment.png"
+         alt="Northstar Financial Group cybersecurity risk assessment">
+    <span>14</span>
+  </div>
+  <div class="lab-content">
+    <div class="tags">
+      <span>GRC</span>
+      <span>NIST CSF 2.0</span>
+      <span>Cybersecurity Risk Assessment</span>
+      <span>Risk Register Development</span>
+    </div>
+
+    <h3>Cybersecurity Risk & Governance Assessment</h3>
+
+    <p>
+      Conducted a simulated organizational cybersecurity risk assessment for
+      Northstar Financial Group, evaluating asset criticality, identity and
+      access management, backup resilience, third-party risk, incident response,
+      data protection, patch management, and security logging. Developed an
+      11-finding risk register with business impact, ownership, remediation
+      priorities, and preliminary NIST CSF 2.0 alignment.
+    </p>
+
+    <a href="Northstar_Financial_Group_Cybersecurity_Risk_Assessment.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read assessment <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</article>
+     <article class="lab-card" data-category="identity governance">
+  <div class="image-wrap">
+    <img src="northstar-iam-rbac.png"
+         alt="Northstar Financial Group identity and access management RBAC assessment">
+    <span>15</span>
+  </div>
+
+  <div class="lab-content">
+    <div class="tags">
+      <span>IAM</span>
+      <span>RBAC</span>
+      <span>Least Privilege</span>
+      <span>Access Governance</span>
+    </div>
+
+    <h3>Identity &amp; Access Management / RBAC Assessment</h3>
+
+    <p>
+      Designed a role-based access control model for Northstar Financial Group
+      covering human and service identities, least privilege, separation of
+      duties, privileged access, MFA, Joiner-Mover-Leaver processes, and
+      access reviews. Developed a consolidated RBAC matrix across 13 systems
+      and 11 role and identity profiles.
+    </p>
+
+    <a href="Northstar_Financial_Group_IAM_RBAC_Assessment.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read assessment <span aria-hidden="true">↗</span>
+    </a>
+
+    <br>
+
+    <a href="Northstar_Final_RBAC_Matrix.csv"
+       download>
+      Download RBAC matrix <span aria-hidden="true">↓</span>
+    </a>
+  </div>
+</article>
+     <article class="lab-card" data-category="continuity governance">
+  <div class="image-wrap">
+    <img src="northstar-bcdr.png"
+         alt="Northstar Financial Group business continuity and disaster recovery assessment">
+    <span>16</span>
+  </div>
+
+  <div class="lab-content">
+    <div class="tags">
+      <span>BC/DR</span>
+      <span>Business Impact Analysis</span>
+      <span>RTO / RPO</span>
+      <span>Tabletop Exercise</span>
+    </div>
+
+    <h3>Business Continuity &amp; Disaster Recovery</h3>
+
+    <p>
+      Developed a comprehensive business continuity and disaster recovery
+      strategy for Northstar Financial Group. Conducted a business impact
+      analysis across 10 critical services, established RTO and RPO targets,
+      prioritized recovery dependencies, identified single points of failure,
+      designed resilient backup and remote-access strategies, and completed
+      a multi-stage tabletop disaster exercise with an after-action review
+      and remediation roadmap.
+    </p>
+
+    <a href="Northstar_Financial_Group_Business_Continuity_Disaster_Recovery_Plan.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read BC/DR plan <span aria-hidden="true">↗</span>
+    </a>
+
+    <br>
+
+    <a href="Northstar_BCDR_Tabletop_Exercise_After_Action_Report.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read tabletop report <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</article>
+     <article class="lab-card" data-category="vendor governance">
+  <div class="image-wrap">
+    <img src="northstar-vendor-risk.png"
+         alt="Northstar Financial Group third-party vendor cybersecurity risk assessment">
+    <span>17</span>
+  </div>
+
+  <div class="lab-content">
+    <div class="tags">
+      <span>Third-Party Risk</span>
+      <span>Vendor Assessment</span>
+      <span>Risk Scoring</span>
+      <span>Contract Review</span>
+    </div>
+
+    <h3>Third-Party / Vendor Cybersecurity Risk Assessment</h3>
+
+    <p>
+      Conducted a simulated third-party cybersecurity risk assessment of
+      Northstar Financial Group's critical managed IT provider. Evaluated
+      privileged access, data protection, incident response, business
+      continuity, subprocessors, supply-chain risk, and vendor exit
+      requirements across a 22-question assessment. Developed weighted
+      current-state and residual-risk scores, negotiated security contract
+      requirements, identified renewal blockers, and issued a Conditional Go
+      recommendation.
+    </p>
+
+    <a href="Northstar_STS_Third_Party_Vendor_Risk_Assessment.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read vendor assessment <span aria-hidden="true">↗</span>
+    </a>
+
+    <br>
+
+    <a href="Northstar_STS_Vendor_Renewal_Decision_Memo.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read renewal decision memo <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</article>
+     <article class="lab-card" data-category="architecture governance">
+  <div class="image-wrap">
+    <img src="northstar-security-architecture.png"
+         alt="Northstar Financial Group secure enterprise security architecture">
+    <span>18</span>
+  </div>
+
+  <div class="lab-content">
+    <div class="tags">
+      <span>Security Architecture</span>
+      <span>Zero Trust</span>
+      <span>Network Segmentation</span>
+      <span>Least Privilege</span>
+    </div>
+
+    <h3>Secure Enterprise Security Architecture</h3>
+
+    <p>
+      Designed a target-state enterprise security architecture for Northstar
+      Financial Group using segmented security zones, default-deny trust
+      boundaries, Zero Trust principles, controlled remote and vendor access,
+      privileged administration, centralized security monitoring, protected
+      data flows, and isolated backup and recovery infrastructure.
+    </p>
+
+    <a href="Northstar_Financial_Group_Secure_Enterprise_Security_Architecture.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read architecture assessment <span aria-hidden="true">↗</span>
+    </a>
+
+    <br>
+
+    <a href="Northstar_Security_Architecture_Executive_Design_Brief.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read executive design brief <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</article>
+     <article class="lab-card" data-category="cloud architecture governance">
+  <div class="image-wrap">
+    <img src="northstar-azure-finance-vm-security.png"
+         alt="Azure Finance VM security assessment">
+    <span>19</span>
+  </div>
+
+  <div class="lab-content">
+    <div class="tags">
+      <span>Azure</span>
+      <span>Cloud Security</span>
+      <span>RBAC</span>
+      <span>PIM</span>
+      <span>Sentinel</span>
+    </div>
+
+    <h3>Azure Finance VM Security Assessment</h3>
+
+    <p>
+      Cloud security assessment and secure redesign for a fictional critical
+      Finance workload, covering privileged access, network segmentation,
+      lateral-movement controls, centralized monitoring, and recovery readiness.
+    </p>
+
+    <div class="lab-links">
+      <a href="Northstar_Ridge_Azure_Finance_VM_Security_Assessment_Case_Study.pdf"
+         target="_blank"
+         rel="noopener noreferrer">Case Study ↗</a>
+    </div>
+  </div>
+</article>
+  </div>
+</section>
+<section class="skills section">
+  <div>
+    <p class="section-label">Capabilities / 06</p>
+    <h2>Tools and methods</h2>
+  </div>
+
+  <div class="skill-list">
+    <span>Wazuh</span>
+    <span>Linux</span>
+    <span>VirtualBox</span>
+    <span>Apache</span>
+    <span>rsyslog</span>
+    <span>UFW</span>
+    <span>Log analysis</span>
+    <span>Alert triage</span>
+    <span>MITRE ATT&amp;CK</span>
+    <span>Detection validation</span>
+    <span>Suricata</span>
+    <span>osquery</span>
+    <span>Python</span>
+    <span>JSONL Normalization</span>
+    <span>Active Response</span>
+    <span>iptables</span>
+    <span>Security Automation</span>
+    <span>Evidence Integrity</span>
+    <span>Identity &amp; Access Management</span>
+    <span>RBAC</span>
+    <span>Least Privilege</span>
+    <span>Privileged Access Management</span>
+    <span>Separation of Duties</span>
+    <span>Joiner-Mover-Leaver</span>
+    <span>Business Continuity</span>
+    <span>Disaster Recovery</span>
+    <span>Business Impact Analysis</span>
+    <span>RTO / RPO Analysis</span>
+    <span>Recovery Planning</span>
+    <span>Tabletop Exercises</span>
+    <span>Third-Party Risk Management</span>
+    <span>Vendor Risk Assessment</span>
+    <span>Supply Chain Risk</span>
+    <span>Contract Security Review</span>
+    <span>Residual Risk Analysis</span>
+    <span>Vendor Due Diligence</span>
+    <span>Security Architecture</span>
+    <span>Zero Trust Architecture</span>
+    <span>Network Segmentation</span>
+    <span>Trust Boundaries</span>
+    <span>Secure Remote Access</span>
+    <span>Privileged Access Design</span>
+    <span>Data Flow Security</span>
+    <span>Defense in Depth</span>
+    <span>Microsoft Azure</span>
+    <span>Cloud Security</span>
+    <span>Microsoft Entra ID</span>
+    <span>Conditional Access</span>
+    <span>Azure RBAC</span>
+    <span>Privileged Identity Management (PIM)</span>
+    <span>Azure Virtual Networks</span>
+    <span>Network Security Groups (NSGs)</span>
+    <span>Azure Firewall</span>
+    <span>Azure Bastion</span>
+    <span>Just-in-Time Access</span>
+    <span>Microsoft Defender for Cloud</span>
+    <span>Azure Monitor</span>
+    <span>Log Analytics</span>
+    <span>Microsoft Sentinel</span>
+    <span>Azure Backup</span>
+    <span>Cloud Resilience</span>
+    <span>Sigma</span>
+    <span>YARA</span>
+    <span>Detection Engineering</span>
+    <span>Threat Intelligence</span>
+    <span>IOC Analysis</span>
+    <span>DFIR</span>
+    <span>Windows Event Analysis</span>
+    <span>PCAP Analysis</span>
+    <span>Network Forensics</span>
+    <span>DevSecOps</span>
+    <span>Application Security</span>
+    <span>Secrets Detection</span>
+    <span>Secure Configuration Review</span>
+    <span>Behavioral Correlation</span>
+    <span>PowerShell</span>
+    <span>File Integrity Monitoring</span>
+    <span>SHA-256 Validation</span>
+    <span>Backup and Recovery Validation</span>
+  </div>
+</section>
+
+<section class="credentials section" id="credentials">
+  <div class="section-heading">
+    <div>
+      <p class="section-label">Credentials / 07</p>
+      <h2>Credentials and recognition</h2>
+    </div>
+    <p>Academic achievement and verified professional development.</p>
+  </div>
+
+  <div class="credential-grid">
+    <article class="credential-card">
+      <p class="credential-type">Education</p>
+      <h3>Bachelor of Science in Cybersecurity</h3>
+      <p>University of Phoenix · Expected May 2028</p>
+    </article>
+
+    <article class="credential-card">
+      <p class="credential-type">Academic honors</p>
+      <h3>President’s List and Dean’s List</h3>
+      <p>President’s List once · Dean’s List twice</p>
+    </article>
+
+    <article class="credential-card">
+      <p class="credential-type">Honor societies</p>
+      <h3>Academic Memberships</h3>
+      <p>NSLS · Epsilon Pi Tau, Delta Sigma Chapter</p>
+    </article>
+
+    <article class="credential-card">
+      <p class="credential-type">Professional development</p>
+      <h3>Verified Digital Credentials</h3>
+      <p>Network defense, endpoint protection, threat response, and data analytics</p>
+      <a
+        href="https://www.credly.com/users/ryan-bryant.4d529186"
+        target="_blank"
+        rel="noopener noreferrer">
+        View Credly profile ↗
+      </a>
+    </article>
+  </div>
+</section>
+<section class="credentials section" id="strengths">
+  <div class="section-heading">
+    <div>
+      <p class="section-label">Analyst value / 08</p>
+      <h2>What I bring to a SOC team</h2>
+    </div>
+    <p>Practical capabilities demonstrated through documented home-lab investigations.</p>
+  </div>
+
+  <div class="credential-grid">
+    <article class="credential-card">
+      <p class="credential-type">Alert investigation</p>
+      <h3>Evidence-Based Triage</h3>
+      <p>Analyze security alerts, validate source telemetry, and distinguish meaningful activity from routine events.</p>
+    </article>
+
+    <article class="credential-card">
+      <p class="credential-type">Technical analysis</p>
+      <h3>Log Analysis</h3>
+      <p>Examine Linux, SSH, Apache, sudo, rsyslog, and firewall logs to identify suspicious behavior.</p>
+    </article>
+
+    <article class="credential-card">
+      <p class="credential-type">Detection engineering</p>
+      <h3>Detection Validation</h3>
+      <p>Generate controlled security events, test Wazuh rules, interpret severity, and map findings to MITRE ATT&amp;CK.</p>
+    </article>
+
+    <article class="credential-card">
+      <p class="credential-type">Communication</p>
+      <h3>Incident Documentation</h3>
+      <p>Produce organized case studies that explain evidence, analytical conclusions, troubleshooting, and remediation recommendations.</p>
+    </article>
+  </div>
+</section>
+<section class="disclosure section"><p class="section-label">Methodology note / 09</p><p>These scenarios were performed by Ryan Bryant in an isolated educational home lab. OpenAI’s ChatGPT (“Sarah”) assisted with troubleshooting, explanations, and document organization. Commands were executed and results were validated by the author. Official vendor documentation is cited within the case-study reports.</p></section>
+<footer id="contact"><div><p class="eyebrow">Open to SOC analyst and cybersecurity analyst opportunities</p><h2>Let’s connect.</h2></div><div class="contact-actions">
+  <a class="button primary" href="mailto:ryanbryant.cyber@gmail.com">Email me</a>
+
+  <a class="button secondary"
+     href="https://www.linkedin.com/in/ryqn-bryant-a35754305"
+     target="_blank"
+     rel="noopener noreferrer">LinkedIn ↗</a>
+
+  <a class="button secondary"
+     href="https://github.com/ryanbryant-cyber"
+     target="_blank"
+     rel="noopener noreferrer">GitHub ↗</a>
+
+<a class="button secondary"
+   href="https://github.com/ryanbryant-cyber/security-operations-toolkit"
+   target="_blank"
+   rel="noopener noreferrer">Security Operations Toolkit ↗</a>
+  
+  <a class="button secondary"
+     href="Ryan_Bryant_Cybersecurity_Analyst_Resume_2026.pdf"
+     target="_blank"
+     rel="noopener noreferrer">Résumé ↗</a>
+</div><p class="copyright">© 2026 Ryan Bryant · Educational cybersecurity portfolio</p></footer>
+   
+</main>
+
+<script>
+  const filterTiles = document.querySelectorAll(".filter-tile");
+  const caseStudies = document.querySelectorAll(".lab-card");
+
+  filterTiles.forEach((tile) => {
+    tile.addEventListener("click", () => {
+      const selectedCategory = tile.dataset.filter;
+
+      filterTiles.forEach((item) => {
+        item.classList.remove("active");
+        item.setAttribute("aria-pressed", "false");
+      });
+
+      tile.classList.add("active");
+      tile.setAttribute("aria-pressed", "true");
+
+      caseStudies.forEach((study) => {
+        const categories = (study.dataset.category || "").split(/\s+/);
+         
+        const showStudy =
+          selectedCategory === "all" ||
+          categories.includes(selectedCategory);
+
+        study.classList.toggle("is-hidden", !showStudy);
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
