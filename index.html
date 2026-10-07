@@ -11,9 +11,9 @@
    target="_blank"
    rel="noopener noreferrer">
   View résumé
-</a></div></div><aside class="signal-card" aria-label="Lab overview"><div class="signal-line"><span class="pulse"></span> LAB STATUS: OPERATIONAL</div><dl><div><dt>19</dt><dd>Documented investigations</dd></div><div><dt>10.10.10.0/24</dt><dd>Isolated virtual network</dd></div><div><dt>Wazuh 4.14.7</dt><dd>SIEM / XDR platform</dd></div></dl></aside></section>
+</a></div></div><aside class="signal-card" aria-label="Lab overview"><div class="signal-line"><span class="pulse"></span> LAB STATUS: OPERATIONAL</div><dl><div><dt>20</dt><dd>Documented investigations</dd></div><div><dt>10.10.10.0/24</dt><dd>Isolated virtual network</dd></div><div><dt>Wazuh 4.14.7</dt><dd>SIEM / XDR platform</dd></div></dl></aside></section>
 <section class="about section" id="about"><div><p class="section-label">Profile / 00</p><h2>Analytical thinking, documented in practice.</h2></div><div class="about-copy"><p>My home lab uses VirtualBox, Wazuh, Ubuntu Server, Apache, rsyslog, and UFW to recreate common security events in a safe, isolated environment.</p><p>Each investigation follows a repeatable SOC workflow: establish a baseline, generate controlled activity, validate the source log, locate the SIEM alert, interpret the rule and severity, map relevant MITRE ATT&amp;CK context, and document the result.</p></div></section>
-<section class="section" id="labs"><div class="section-heading"><div><p class="section-label">Selected work / 01—19</p><h2>Cybersecurity investigations & assessments</h2></div><p>Evidence-led technical investigations, security assessments, and cybersecurity risk projects.</p></div>
+<section class="section" id="labs"><div class="section-heading"><div><p class="section-label">Selected work / 01—20</p><h2>Cybersecurity investigations & assessments</h2></div><p>Evidence-led technical investigations, security assessments, and cybersecurity risk projects.</p></div>
    <div class="case-study-filters" aria-label="Filter case studies by category">
   <button class="filter-tile active" type="button" data-filter="all">
     <span>All</span>
@@ -80,6 +80,37 @@
 </button>
 </div>
    <div class="lab-grid">
+     <article class="lab-card" data-category="endpoint defense">
+  <div class="image-wrap">
+    <img src="northstar-ransomware-recovery.png"
+         alt="Four restored Finance files with matching SHA-256 hashes">
+    <span>20</span>
+  </div>
+
+  <div class="lab-content">
+    <div class="tags">
+      <span>PowerShell</span>
+      <span>Incident Response</span>
+      <span>SHA-256</span>
+    </div>
+
+    <h3>Ransomware Incident Response &amp; Recovery</h3>
+
+    <p>
+      Investigated a controlled ransomware-like simulation affecting four
+      synthetic Finance files. Correlated live file activity with PowerShell
+      evidence, validated backups, and confirmed all four restored files
+      matched their original SHA-256 hashes. Used Base64 simulation;
+      no real encryption was performed.
+    </p>
+
+    <a href="Northstar_Ridge_Ransomware_Incident_Response_Recovery_Case_Study.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read case study <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</article>
       <article class="lab-card" data-category="vulnerability">
   <div class="image-wrap">
     <img src="vulnerability-assessment.png"
@@ -686,6 +717,10 @@
     <span>Secrets Detection</span>
     <span>Secure Configuration Review</span>
     <span>Behavioral Correlation</span>
+    <span>PowerShell</span>
+    <span>File Integrity Monitoring</span>
+    <span>SHA-256 Validation</span>
+    <span>Backup and Recovery Validation</span>
   </div>
 </section>
 
